@@ -4,9 +4,11 @@ I created this python code to demonstrate cloud automation using CLI. The code b
 Note: A valid AWS account is required to successful run this python code. The user MUST be logged into the CLI interface before running the python code. The python code will not prompt the user to enter their user credentials.  
 
 #Supported versions:
+
 Python 2.7.15 (tested)
 
 #Libraries and Modules
+
 netmiko, getpass, os, netaddr, ipaddress, time, termcolor, sys
 
 #Default settings
@@ -23,7 +25,10 @@ def defaults():
 
 #How to use
 
+0) 	Login into the AWS account via CLI
+
 Python 2.7 aws_deploy_ec2_with_vpc.py
+
 1)	User is prompted to selected demo mode (prepopulated configuration) or to enter manually. 
 2)	If demo mode is selected, all configuration is displayed as a summary 
 3)	If the user manually entered the configuration, all configuration is displayed as a summary
