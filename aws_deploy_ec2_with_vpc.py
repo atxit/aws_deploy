@@ -314,7 +314,6 @@ def build_ec2(subnet_id,sg,user_key):
 	                         --count 1 \
 	                         --instance-type t2.micro \
 	                         --key-name {user_key} \
-	                         --launch-template LaunchTemplateId=lt-09acb557596625184,Version=1 \
 	                         --query "Instances[0].InstanceId" \
 	                         --associate-public-ip-address'.format(subnet_id=subnet_id,sg=sg,user_key=user_key)
 	results_json = commands.getoutput(attach_ec2)                        
